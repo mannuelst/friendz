@@ -2,6 +2,9 @@ import { Text } from "react-native";
 
 export default function App() {
   return (
-    <Text>Oi friends</Text>
+    <>
+      <Text>friendz</Text>
+      <Text>Invite all your friendz</Text>
+    </>
   )
 }
