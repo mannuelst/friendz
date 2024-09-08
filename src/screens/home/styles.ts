@@ -8,13 +8,20 @@ export const styles = StyleSheet.create({
 
   },
   eventName: {
-    color: "#ffffff",
+    color: "#fdfcfe",
     fontWeight: "bold",
     fontSize: 24,
     marginTop: 48
   },
   eventDate: {
-    color: "#ffffff",
+    color: "#6b6b6b",
+    fontSize: 16
+  },
+  input: {
+    backgroundColor: "#1f1e25",
+    borderRadius: 8,
+    color: "#fff",
+    padding: 16,
     fontSize: 16
   }
 })
