@@ -1,4 +1,5 @@
 import { Text, TextInput, TouchableOpacity, View } from "react-native";
+import { Friends } from "../../components/friends";
 import { styles } from "./styles";
 
 
@@ -21,6 +22,7 @@ export function Home() {
           </Text>
         </TouchableOpacity>
       </View>
+      <Friends />
     </View >
   )
 }
