@@ -32,8 +32,8 @@ export function Home() {
   }
   return (
     <View style={styles.container}>
-      <Text style={styles.eventName}>friendz</Text>
-      <Text style={styles.eventDate}>Convide todos os seus amigos</Text>
+      <Text style={styles.eventName}>Namefy</Text>
+      <Text style={styles.eventDate}>Adicione nomes na tua lista</Text>
       <View style={styles.form}>
 
         <TextInput style={styles.input} placeholder="Nome do convidado"
@@ -60,7 +60,7 @@ export function Home() {
         )}
         ListEmptyComponent={() => (
           <Text style={styles.emptyList}>
-            Não convidou nenhum amigo ainda? Adicione um amigo.
+            Não adicionou nenhum nome ainda? Adicione um.
           </Text>
 
         )}
