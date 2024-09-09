@@ -8,13 +8,16 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     gap: 7,
-    marginBottom: 10
+    marginBottom: 10,
+
 
   },
   name: {
     color: "#fff",
     flex: 1,
-    fontSize: 16
+    fontSize: 16,
+    padding: 16,
+
 
   },
   button: {
@@ -27,7 +30,6 @@ export const styles = StyleSheet.create({
   },
   buttonText: {
     color: "#fff",
-
     fontSize: 24
 
   }
