@@ -7,9 +7,9 @@ import { styles } from "./styles";
 export function Home() {
   const [friends, setFriends] = useState<string[]>([])
   const [friendName, setFriendName] = useState("")
-  const allFriends = ["Alberto", "John", "Lucas", "Silvia", "Manuel"]
+  //const allFriends = ["Alberto", "John", "Lucas", "Silvia", "Manuel"]
   function handleAddFriends() {
-    if (allFriends.includes(friendName)) {
+    if (friends.includes(friendName)) {
       return Alert.alert("Adicionar", "Já existe um amigo com este nome")
     }
     setFriends(prevState => [...prevState, friendName])
@@ -21,7 +21,7 @@ export function Home() {
     Alert.alert("Remover", `Quer remover ${name}?`, [
       {
         text: "Sim",
-        onPress: () => Alert.alert("Removido!")
+        onPress: () => setFriends(prevSate => prevSate.filter(friend => friend != name))
       },
       {
         text: "Não",
