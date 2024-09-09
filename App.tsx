@@ -1,10 +1,7 @@
-import { Text } from "react-native";
+import Home from "./src/screens/home";
 
 export default function App() {
   return (
-    <>
-      <Text>friendz</Text>
-      <Text>Invite all your friendz</Text>
-    </>
+    <Home />
   )
 }
