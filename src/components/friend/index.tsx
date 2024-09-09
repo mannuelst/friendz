@@ -1,14 +1,18 @@
 import { Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
+type FriendProps = {
+  name: string,
+  onRemove: () => void
 
-export function Friends() {
+}
+export function Friend({ name, onRemove }: Readonly<FriendProps>) {
   return (
     <View style={styles.container}>
 
 
       <Text style={styles.name}>
-        Friend convidado</Text>
-      <TouchableOpacity style={styles.button}>
+        {name}</Text>
+      <TouchableOpacity style={styles.button} onPress={onRemove}>
         <Text style={styles.buttonText}>
           -
         </Text>
